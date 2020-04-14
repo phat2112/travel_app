@@ -1,0 +1,32 @@
+.location-places{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.location-places-container{
+    width: 15%;
+    display: flex;
+    background: #2C5364;
+    .location-place-img, .location-place-content{
+        width: 45%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center
+    }
+}
+.location-place-img{
+    svg{
+        font-size: 50px;
+        color:rgba(255,255,255, .5);
+    }
+}
+.location-place-content{
+    width:55%!important;
+    padding: 0 20px;
+    padding-top:10px;
+    p{
+        font-size: 20px;
+        color: #fff;
+    }
+}

@@ -1,0 +1,66 @@
+.chart-places-status{
+    width:45%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top:30px;
+    background: #2C5364;
+    .title-chart{
+        display: flex;
+        width: 100%;
+        h3{
+            color: #fff;
+            font-size: 18px;
+        }
+    }
+    canvas{
+        max-width:500px;
+        max-height:300px;
+    }
+    .chart-status{
+        width: 30%;
+        height: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+   
+}
+.chart-status-container{
+    position: relative;
+    .chart-total-vote{
+        position: absolute;
+        top: 54px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        .total-number{
+            font-size:30px;
+            text-align: center;
+        }
+        p{
+            margin: 0;
+        }
+    }
+}
+.chart-status-text{
+    display: flex;
+    width: 77px;
+    justify-content: space-between;
+    color: #fff;
+    padding-left: 5px;
+}
+.places-container{
+    width: 45%;
+    .bar-chart{
+        p{
+            color: #fff;
+            font-size:16px;
+            margin-bottom: 7px;
+        }
+    }
+    .bar-chart-container{
+        height:10px;
+        width: 100px;
+        background: linear-gradient(to right, #a8c0ff, #3f2b96);
+    }
+}

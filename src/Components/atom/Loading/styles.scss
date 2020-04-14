@@ -1,0 +1,28 @@
+.loading-container{
+    width:300px;
+    height:300px;
+    position:fixed;
+    border-radius: 50%;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 0 #2bb673;
+    z-index: 1;
+    background: #2bb673;
+    color: #fff;
+    transition: .4s;
+    opacity: 0;
+    .anticon-loading{
+        font-size:40px;
+    }
+    h1{
+        color: #fff;
+        span:before{
+            content: 'Wait a Second...';
+        }
+    }
+}

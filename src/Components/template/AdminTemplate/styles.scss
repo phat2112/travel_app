@@ -1,0 +1,27 @@
+.admin-template{
+    overflow: hidden;
+}
+.admin-temlate-content{
+    margin-top:70px;
+    display: flex;
+}
+.side-bar{
+    height: inherit;
+    width: 80px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(#274046, .9);
+    opacity:.9;
+    padding-top: 40px;
+    position: fixed;
+    top: 5%;
+    height: 100%;
+}
+.admin-template-component{
+    width: calc(100vw - 80px);
+    margin-left: 80px;
+    height: calc(100vh - 70px);
+    overflow: auto;
+    background: linear-gradient(to right, #4568dc, #b06ab3);
+}

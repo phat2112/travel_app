@@ -1,0 +1,42 @@
+.navbar{
+    background: #274046;
+    position: fixed;
+    top:0;
+    width:100%;
+    height:70px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    &-search{
+        width:400px;
+    }
+    .ant-input-search{
+        background: transparent;
+        border-radius: 20px;
+        border: 2px solid rgba(255,255,255,.4);
+        &:hover{
+            border-color:rgba(255,255,255,.4);
+            box-shadow: 0 0 2px 1px rgba(255,255,255,.4);
+            
+        }
+    }
+    .ant-input{
+        background: transparent;
+    }
+}
+.navbar-user-profile{
+    .profile-button{
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        background : #c471ed;
+        color: #fff;
+        transition: .4s;
+        &:hover{
+            background: transparent;
+            color: #f64f59;
+            border: 1px solid #f64f59;
+        }
+    }
+}

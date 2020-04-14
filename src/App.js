@@ -1,25 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
+import AuthTemplateRoute from './Containers/AuthTemplateRoute'
+import LoginPagecontainer from './Containers/LoginPage';
+import DashboardContainer from './Containers/Dashboard';
+import RegisterPage from './Components/pages/RegisterPage'
+import ForgotPassword from './Components/pages/ForgotPassword';
+import AdminTemplateRoute from './Containers/AdminTemplate';
+import LocationChartContainer from './Containers/LocationChart';
+import PageNotFound from './Components/pages/PageNotFound';
+import ListProfileUserContainer from './Containers/ListProfileUser';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <BrowserRouter>
+      <Switch>
+        <AuthTemplateRoute path='/login' component={LoginPagecontainer}/>
+        <AuthTemplateRoute path='/register' component={RegisterPage}/>
+        <AuthTemplateRoute path='/forgot-password' component={ForgotPassword}/>
+        <AdminTemplateRoute path='/travel-list' component={DashboardContainer}/>
+        <AdminTemplateRoute path ='/travel-places/:id' component={LocationChartContainer} />
+        <AdminTemplateRoute path ='/users' component={ListProfileUserContainer} />
+        <Redirect exact path='/' to='/travel-list'/>
+        <Route path="*" component={PageNotFound} />
+      </Switch>
+   </BrowserRouter>
   );
 }
 

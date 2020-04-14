@@ -1,0 +1,119 @@
+.location-detail-review{
+    margin-top: 40px;
+    display:flex;
+    justify-content: space-between;
+    .review-title{
+        width: 50%;
+        font-size:25px;
+        display: flex;
+        align-items: center;
+        h4{
+            color: #fff;
+            text-align: center;
+            width:100%;
+        }
+    }
+    .location-review-start{
+        flex: 1;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .svg-inline--fa{
+        font-size: 20px;
+    }
+}
+.location-detail-container{
+    padding-top:10px;
+    min-height: 500px;
+    background: linear-gradient(to right, #1f4037, #99f2c8);
+    position: fixed;
+    width:20%;
+    height:100%;
+    h1{
+        text-align: center;
+        color: #fff;
+    }
+    .slick-image-container{
+        width: 368px;
+        height: 320px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .slick-dots{
+        li{
+            width: 10px;
+            height: 10px;
+            background: black;
+            border-radius: 50%;
+        }
+        button{
+            &:before{
+                content: ''!important;
+            }
+        }
+        .slick-active{
+            background: #fff;
+        }
+    }
+}
+.location-detail-tour{
+    h3{
+        font-size:20px;
+        color:#fff;
+        text-align: center;
+        margin: 30px 0 ;
+    }
+}
+.tour-partnership{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+    .partnership-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .partner-img{
+        width: calc(100% / 2);
+        height:100px;
+        img{
+            max-width: 100%;
+            object-fit: contain;
+            height: 100%;
+        }
+    }
+    h4{
+        color:#fff;
+        font-size: 18px;
+    }
+
+}
+.location-detail-button{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    button{
+        height:100%;
+        width: 175px;
+        border: none;
+        border-radius: 20px;
+        background-image: linear-gradient(to right, #f5ce62, #e43603, #fa7199, #e85a19);
+        box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+        background-size: 300% 100%;
+        transition: .4s;
+        cursor: pointer;
+        color: #fff;
+        font-size: 16px;
+        &:hover{
+            background-position: 100% 0;
+        }
+    }
+}

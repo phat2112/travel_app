@@ -1,0 +1,104 @@
+.login-container{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    top:50%;
+    right:20%;
+    transform: translateY(-50%);
+    background: transparent;
+    box-shadow: 0 0 4px 0 rgba(0,0,0,.2);
+    border-radius: 10px;
+    animation: slideTop 1s;
+    transition: .5s cubic-bezier(0,.41,.74,.65);
+}
+.login-container-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:relative;
+    width: inherit;
+    height:150px;
+    h1{
+        margin-top: 3em;
+        color: #2bb673;
+    }
+}
+.login-container-image{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: -50%;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+        max-width: 100%;
+    }
+}
+.login-container-form{
+    padding: 0 15px;
+    .ant-form-item-label{
+        font-size:18px;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: .5px;
+        -webkit-text-stroke-color: black;
+    }
+    .ant-form-item-required::before{
+        content: ''!important;
+    }
+    .ant-form-item{
+        display: flex;
+        margin-bottom:20px;
+    }
+
+    .ant-input, .ant-input-password{
+        background: transparent;
+        &:hover{
+            border: 1px solid rgba(0,0,0,.1);
+            box-shadow: 0 0 4px 1px rgba(0,0,0,.1);
+        }
+    }
+    .ant-input-password{
+        .ant-input:hover{
+            border: none;
+            box-shadow: unset;
+        }
+    }
+    .ant-btn-primary{
+        background-size: 300% 100%;
+        transition: all .4s ease-in-out;
+        background:  #2bb673;
+        border: none;
+        width: 150px;
+        height: 40px;
+        border-radius: 20px;
+        font-size: 20px;
+       
+        &:hover{
+            background: transparent!important;
+            border: 1px solid #2bb673;
+            color: #2bb673;
+            // box-shadow: 0 0 0 1300px #2bb673;
+        }
+    }
+}
+.ant-checkbox-checked{
+    .ant-checkbox-inner{
+        background: #2bb673!important;
+        border-color: #2bb673!important;
+    }
+}
+.login-button-container{
+    display: flex;
+    justify-content: space-between;
+    ;
+}
+@keyframes slideTop{
+    0%{
+        top: 60%;
+        opacity:0;
+    }
+    100%{
+        top: 50%;
+        opacity: 1;
+    }
+}
